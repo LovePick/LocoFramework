@@ -7,29 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ACD0256523333AC7006E93BF /* LocoFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD0255B23333AC7006E93BF /* LocoFramework.framework */; };
-		ACD0256A23333AC7006E93BF /* LocoFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0256923333AC7006E93BF /* LocoFrameworkTests.swift */; };
 		ACD0256C23333AC7006E93BF /* LocoFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD0255E23333AC7006E93BF /* LocoFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ACD0257623333B1F006E93BF /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0257523333B1F006E93BF /* Service.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		ACD0256623333AC7006E93BF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ACD0255223333AC7006E93BF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ACD0255A23333AC7006E93BF;
-			remoteInfo = LocoFramework;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		ACD0255B23333AC7006E93BF /* LocoFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LocoFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD0255E23333AC7006E93BF /* LocoFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocoFramework.h; sourceTree = "<group>"; };
 		ACD0255F23333AC7006E93BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ACD0256423333AC7006E93BF /* LocoFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocoFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACD0256923333AC7006E93BF /* LocoFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocoFrameworkTests.swift; sourceTree = "<group>"; };
-		ACD0256B23333AC7006E93BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACD0257523333B1F006E93BF /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,14 +26,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ACD0256123333AC7006E93BF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ACD0256523333AC7006E93BF /* LocoFramework.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -56,7 +33,6 @@
 			isa = PBXGroup;
 			children = (
 				ACD0255D23333AC7006E93BF /* LocoFramework */,
-				ACD0256823333AC7006E93BF /* LocoFrameworkTests */,
 				ACD0255C23333AC7006E93BF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,7 +41,6 @@
 			isa = PBXGroup;
 			children = (
 				ACD0255B23333AC7006E93BF /* LocoFramework.framework */,
-				ACD0256423333AC7006E93BF /* LocoFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,15 +53,6 @@
 				ACD0257523333B1F006E93BF /* Service.swift */,
 			);
 			path = LocoFramework;
-			sourceTree = "<group>";
-		};
-		ACD0256823333AC7006E93BF /* LocoFrameworkTests */ = {
-			isa = PBXGroup;
-			children = (
-				ACD0256923333AC7006E93BF /* LocoFrameworkTests.swift */,
-				ACD0256B23333AC7006E93BF /* Info.plist */,
-			);
-			path = LocoFrameworkTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,24 +87,6 @@
 			productReference = ACD0255B23333AC7006E93BF /* LocoFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		ACD0256323333AC7006E93BF /* LocoFrameworkTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ACD0257223333AC7006E93BF /* Build configuration list for PBXNativeTarget "LocoFrameworkTests" */;
-			buildPhases = (
-				ACD0256023333AC7006E93BF /* Sources */,
-				ACD0256123333AC7006E93BF /* Frameworks */,
-				ACD0256223333AC7006E93BF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				ACD0256723333AC7006E93BF /* PBXTargetDependency */,
-			);
-			name = LocoFrameworkTests;
-			productName = LocoFrameworkTests;
-			productReference = ACD0256423333AC7006E93BF /* LocoFrameworkTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -152,9 +100,6 @@
 					ACD0255A23333AC7006E93BF = {
 						CreatedOnToolsVersion = 10.3;
 						LastSwiftMigration = 1030;
-					};
-					ACD0256323333AC7006E93BF = {
-						CreatedOnToolsVersion = 10.3;
 					};
 				};
 			};
@@ -171,20 +116,12 @@
 			projectRoot = "";
 			targets = (
 				ACD0255A23333AC7006E93BF /* LocoFramework */,
-				ACD0256323333AC7006E93BF /* LocoFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		ACD0255923333AC7006E93BF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACD0256223333AC7006E93BF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -202,23 +139,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ACD0256023333AC7006E93BF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ACD0256A23333AC7006E93BF /* LocoFrameworkTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		ACD0256723333AC7006E93BF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = ACD0255A23333AC7006E93BF /* LocoFramework */;
-			targetProxy = ACD0256623333AC7006E93BF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		ACD0256D23333AC7006E93BF /* Debug */ = {
@@ -396,44 +317,6 @@
 			};
 			name = Release;
 		};
-		ACD0257323333AC7006E93BF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4836KR52L9;
-				INFOPLIST_FILE = LocoFrameworkTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.t2p.LocoFrameworkTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		ACD0257423333AC7006E93BF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4836KR52L9;
-				INFOPLIST_FILE = LocoFrameworkTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.t2p.LocoFrameworkTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -451,15 +334,6 @@
 			buildConfigurations = (
 				ACD0257023333AC7006E93BF /* Debug */,
 				ACD0257123333AC7006E93BF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ACD0257223333AC7006E93BF /* Build configuration list for PBXNativeTarget "LocoFrameworkTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ACD0257323333AC7006E93BF /* Debug */,
-				ACD0257423333AC7006E93BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
